@@ -1,0 +1,24 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+
+.main {
+  font-family: "Noto Sans", sans-serif !important;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.music-nav-main{
+  background-color: #fff;
+
+}
+
+.music-nav-main{
+  width: 450px;
+}
+
+.music-content-main{
+  background-color: #f1f4f5;
+}

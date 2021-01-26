@@ -1,0 +1,32 @@
+.music-menu-area{
+    color: #454f63;
+}
+
+.menu-title{
+    color:#9a9aa6;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+
+}
+
+ul{
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.menu-list{
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .8px;
+
+}
+.menu-list:hover{
+    color: #5773ff;
+    border-right: 4px solid #5773ff;
+    border-radius: 3px;
+
+    
+}
+

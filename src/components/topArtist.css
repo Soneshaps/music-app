@@ -1,0 +1,21 @@
+.top-artist-wrapper{
+    flex: 0 0 70px; /* Let it fill the entire space horizontally */
+
+     }
+
+.top-artist-image img{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
+ .artist-name{
+     color: #454f63;
+     font-size: 11px;
+     height: 40px;
+     vertical-align: middle;
+ }
+
+ .artist-plays{
+     color: #bfc2c4;
+     font-size: 9px;
+ }

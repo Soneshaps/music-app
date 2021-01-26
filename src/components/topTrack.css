@@ -1,0 +1,39 @@
+.top-track{
+    font-weight: 400;
+}
+
+.track-count{
+    color:#9a9aa6;
+    font-size:0.9em;
+    
+}
+
+.track-image img{
+    height: 40px;
+    width: 40px;
+}
+
+.track-time{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.track-name{
+    color :#454f63;
+    font-size: 11px;
+    font-weight: 600;
+    width: 140px;
+    
+}
+.track-artist{
+    font-size: 9px;
+    font-weight: 600;
+    width: 140px;
+
+}
+
+.track-play svg:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}

@@ -1,0 +1,17 @@
+.recent-tracks-wrapper {
+}
+
+.recent-tracks{
+    width: 100px;
+}
+.recent-tracks img{
+    height: 100px;
+    border-radius: 10px;
+}
+
+.recent-track-name{
+    height: 50px;
+    color: #454f63;
+    font-size: 12px;
+    font-weight: 600;
+}

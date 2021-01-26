@@ -1,0 +1,41 @@
+.player-image img{
+    height: 130px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.player-name{
+    font-size: 24px;
+    font-weight: normal;
+    height: 40px;
+}
+
+.player-artist{
+    font-size: 15px;
+    font-weight: normal;
+    height: 20px;
+
+}
+
+.player-buttons{
+    flex: 1;
+    flex-basis: fill;
+}
+
+
+
+.player-button svg{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.player-button svg:hover{
+    color: #454f63;
+    transition: all 0.2s ease-in;
+}
+
+.player-button svg:active{
+    color: #1c1d21;
+    transition: all 0.1s ease-in;
+}

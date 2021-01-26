@@ -1,0 +1,26 @@
+.title-account{
+    width: 150px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.account-img{
+    width: 50px;
+    border-radius: 50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.account-img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.account-name{
+    width: 100px;
+    color: #454f63;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}

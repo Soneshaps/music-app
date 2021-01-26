@@ -1,0 +1,61 @@
+.top-main-content{
+    background-color: #fff;
+    height: 200px;
+    border-radius: 5px;
+
+
+}
+.recent-played-title{
+    color: #9a9aa6;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+}
+
+.main-content{
+    flex: 0 0 700px;
+}
+
+
+
+
+.main-top{
+}
+
+.main-top-artist{
+    color: #9a9aa6;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+.main-top-genres{
+    color: #9a9aa6;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main-top-charts{
+    color: #9a9aa6;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main-music-player{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+    flex: 1;
+    background-color: #32323d;
+    border-radius: 5px;
+}
