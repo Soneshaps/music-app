@@ -11,14 +11,17 @@
 }
 
 .music-nav-main{
-  background-color: #fff;
+  background-color: #d8dbe7;
+  -webkit-box-shadow: 5px 1px 15px 5px #000000; 
+box-shadow: 5px 1px 15px 5px #000000;
 
 }
 
-.music-nav-main{
-  width: 450px;
-}
+
+
 
 .music-content-main{
   background-color: #f1f4f5;
+  flex-grow: 1;
+  overflow: hidden;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './mainContent.css'
 import TopArtist from './topArtist';
-import TopGenres from "./topGenres";
+
 import TopTrack from "./topTrack";
 import Player from "./Player";
 
@@ -10,6 +10,8 @@ const MainContent = () => {
     
     return ( 
     <div className="main-content d-flex flex-column mt-2">
+     
+
         <div className="top-main-content mb-3">
             <div className="recent-played-title pt-2 pl-4 mb-3">Recently Played</div>
             <RecentPlayed/>

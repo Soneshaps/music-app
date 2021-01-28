@@ -6,7 +6,7 @@ import TitleAccount from './titleAccount' //Title account is not available at th
 
 const TitleBarMain=()=> {
     return(
-        <div className="title-bar d-flex flex-row justify-content-between mt-3 ">
+        <div className="title-bar d-flex flex-row justify-content-between mt-2 ">
             <TitleNav/>
             <TitleSearch/>
             <TitleAccount/>

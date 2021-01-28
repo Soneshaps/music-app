@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import "./App.css";
 import Login from "./components/login";
 import { getTokenFromUrl } from "./components/spotify";
@@ -11,7 +11,7 @@ const spotify = new SpotifyWebApi();
 
 function App() {
  
-  const [{ user, token ,top_track }, dispatch] = useDataLayerValue();
+  const [{  token  }, dispatch] = useDataLayerValue();
   
   useEffect(() => {
     
@@ -24,7 +24,6 @@ function App() {
         type: "SET_TOKEN",
         token: _token,
       });
-      console.log("[token]", token);
 
       spotify.setAccessToken(_token);
 
@@ -41,7 +40,6 @@ function App() {
           playlists,
         });
       });
-
       
       spotify.getMyTopArtists().then((artists) => {
         dispatch({
@@ -50,20 +48,7 @@ function App() {
         });
       });
 
-      spotify.getAvailableGenreSeeds().then((genres)=>{
-        dispatch({
-          type:"SET_TOP_GENRES",
-          top_genres:genres,
-        });
-      });
-
-      spotify.getMyTopTracks().then((track)=>{
-        dispatch({
-          type:"SET_TOP_TRACK",
-          top_track:track,
-        });
-      });
-
+       
       
       spotify.getMyRecentlyPlayedTracks().then((tracks)=>{
         dispatch({
@@ -71,6 +56,9 @@ function App() {
           recent_tracks:tracks,
         });
       });
+
+      spotify.setAccessToken(_token);
+
       
       const interval = setInterval(() => {
         spotify.getMyCurrentPlayingTrack().then((track)=>{
@@ -79,17 +67,21 @@ function App() {
           current_playing_track : track,
         });
       });
+      spotify.getMyTopTracks().then((track)=>{
+        dispatch({
+          type:"SET_TOP_TRACK",
+          top_track:track,
+        });
+      });
+     
+
         
       }, 1000);
       return () => clearInterval(interval);
 
       
-
-    
-      
-      
     }
-  }, []);
+  },[]);
 
   return (
     <div className="app">

@@ -1,6 +1,5 @@
 import React from 'react';
 import './titleAccount.css'
-import {FaUserAlt} from 'react-icons/fa'
 import { useDataLayerValue } from "./DataLayer";
 
 const TitleAccount = () => {

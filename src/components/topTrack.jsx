@@ -1,6 +1,7 @@
 import React from 'react';
 import {RiPlayMiniFill} from 'react-icons/ri';
 import {HiFolderAdd} from 'react-icons/hi';
+import {FiBarChart2} from 'react-icons/fi'
 import './topTrack.css'
 import {useDataLayerValue} from './DataLayer';
 import SpotifyWebApi from 'spotify-web-api-js'
@@ -9,7 +10,8 @@ import SpotifyWebApi from 'spotify-web-api-js'
 const spotify = new SpotifyWebApi();
 
 const TopTrack = () => {
-    const [{top_track},dispatch] = useDataLayerValue();
+    const [{top_track,current_playing_track}] = useDataLayerValue();
+    
 
     
  const millisToMinutesAndSeconds=(millis)=> {
@@ -22,10 +24,9 @@ const TopTrack = () => {
     spotify.queue(id).then(()=>{
         spotify.skipToNext()
     })
-    
-        
-
   }
+
+  
 
 
     return ( 
@@ -36,7 +37,7 @@ const TopTrack = () => {
                 0{index+1}
             </div>
             <div className="track-image pr-3">
-                <img src={track?.album?.images[0]?.url}/>
+                <img alt={track?.name} src={track?.album?.images[0]?.url}/>
             </div>
             <div className="track-detail d-flex flex-column pr-2 d-flex align-items-center">
                 <div className="track-name ">
@@ -50,7 +51,8 @@ const TopTrack = () => {
                 {millisToMinutesAndSeconds(track?.duration_ms)}
             </div>
             <div className="track-play pr-3 d-flex align-items-center">
-                <RiPlayMiniFill onClick={()=>trackPlay(track?.uri)}/>    
+                {(current_playing_track?.item?.id===track?.id)?<FiBarChart2/>:<RiPlayMiniFill onClick={()=>trackPlay(track?.uri)}/>}
+                   
             </div>
             <div className="track-add d-flex align-items-center ">
                 <HiFolderAdd/>

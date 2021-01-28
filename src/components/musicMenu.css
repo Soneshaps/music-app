@@ -20,13 +20,23 @@ ul{
     cursor: pointer;
     font-weight: 600;
     letter-spacing: .8px;
+    
 
 }
+
+.menu-list a{
+    color: #454f63 !important;
+    text-decoration: none !important;
+}
+
+.menu-list a:hover{
+    color: #5773ff !important;
+}
+
 .menu-list:hover{
     color: #5773ff;
-    border-right: 4px solid #5773ff;
-    border-radius: 3px;
 
     
 }
+
 

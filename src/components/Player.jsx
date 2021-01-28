@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Player.css'
 import {useDataLayerValue} from './DataLayer'
-import {GrPlayFill} from 'react-icons/gr'
 import SpotifyWebApi from 'spotify-web-api-js'
 import {BiSkipPrevious,BiSkipNext,BiPlay,BiPause} from 'react-icons/bi'
 
@@ -9,7 +8,7 @@ const spotify = new SpotifyWebApi();
 
 const Player = () => {
     
-    const [{current_playing_track},dispatch]= useDataLayerValue();
+    const [{current_playing_track}]= useDataLayerValue();
     
     const playerPause=()=>{
         spotify.pause()
@@ -28,10 +27,10 @@ const Player = () => {
                             <div>
                     Playing Now
                 </div>
-                {(current_playing_track!="")?
+                {(current_playing_track!=="")?
                 <div>
                     <div className="player-image d-flex justify-content-center mt-4">
-                    <img src={current_playing_track?.item?.album?.images[0]?.url} />
+                    <img alt={current_playing_track?.item?.name} src={current_playing_track?.item?.album?.images[0]?.url} />
                 </div>
                 <div className="player-name text-center mt-3 overflow-hidden">
                     {current_playing_track?.item?.name}
