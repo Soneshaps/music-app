@@ -41,7 +41,7 @@ function App() {
         });
       });
       
-      spotify.getMyTopArtists().then((artists) => {
+      spotify.getMyTopArtists({limit:50}).then((artists) => {
         dispatch({
           type: "SET_TOP_ARTIST",
           top_artist : artists,

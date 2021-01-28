@@ -3,36 +3,30 @@
     border-radius: 5px;
 }
 
-.content-main{
-    height: 600px;
-    overflow: auto;
-    
-}
-
-.track-main-wrapper{
+.recent-main-wrapper{
     height: 200px;
     width: 200px;
     
 }
 
-.track-main-image img{
+.recent-main-image img{
     height: 100px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
-.track-main-name{
+.recent-main-name{
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
 
 }
 
-.track-main-name:hover{
+.recent-main-name:hover{
     text-decoration: underline;
 }
 
-.track-main-artist-name{
+.recent-main-artist-name{
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
@@ -40,6 +34,6 @@
 
 }
 
-.track-main-artist-name:hover{
+.recent-main-artist-name:hover{
     text-decoration: underline;
 }

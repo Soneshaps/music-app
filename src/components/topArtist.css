@@ -13,7 +13,12 @@
      font-size: 11px;
      height: 40px;
      vertical-align: middle;
+     cursor: pointer;
  }
+
+ .artist-name:hover{
+     text-decoration: underline;
+}
 
  .artist-plays{
      color: #bfc2c4;

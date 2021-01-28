@@ -1,0 +1,28 @@
+.artist-main{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+.artist-main-wrapper{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.artist-main-image img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.artist-main-name{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.artist-main-name:hover{
+    text-decoration: underline;
+}

@@ -7,7 +7,7 @@ const MusicMenu =()=> {
    
         const menuItems = [
            <Link to="/">Explore</Link> ,
-           <Link to="/track">Album</Link> ,
+           <Link to="/track">Tracks</Link> ,
            <Link to="/artist">Artist</Link> ,
            <Link to="/recent">Recent</Link> ] 
         const menuItemsIcon = [<MdExplore/>,<MdRadioButtonChecked/>,<MdMic/>,<MdReplay/>]

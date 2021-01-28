@@ -5,6 +5,8 @@ import MusicLibaray from './musicLibaray'
 import TitleBarMain from './titleBarMain'
 import MainContent from './mainContent'
 import Track from './track'
+import Artist from './artist'
+import Recent from './recent'
 import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Switch>
           <Route path='/' exact component={MainContent}/>
           <Route path='/track' component={Track}/>
+          <Route path='/artist' component={Artist}/>
+          <Route path='/recent' component={Recent}/>
         </Switch>
       
       </div>
