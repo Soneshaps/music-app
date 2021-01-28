@@ -1,5 +1,5 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://meromusic.netlify.app/";
 const clientId = "887fa924d30d48e0a20b55c5160f3597";
 
 const scopes = [
