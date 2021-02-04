@@ -44,7 +44,7 @@ function App() {
         </Switch>
         
       </div>
-     {(pathname==='/' || windowWidth>1000 || current_playing_track==="" )?'':<MiniPlayer/>}
+     {((pathname==='/' && windowWidth>1000) || current_playing_track==="" )?'':<MiniPlayer/>}
     </div>
     </Router>
   );
