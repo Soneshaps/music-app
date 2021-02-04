@@ -1,5 +1,7 @@
 .top-track{
     font-weight: 400;
+    height: 170px;
+    overflow: auto;
 }
 
 .track-count{
@@ -9,8 +11,8 @@
 }
 
 .track-image img{
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
 }
 
 .track-time{
@@ -33,8 +35,8 @@
 }
 
 .track-play svg{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .track-play svg:hover {

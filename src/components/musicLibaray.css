@@ -28,3 +28,19 @@ ul{
     
 }
 
+.libaray-list a{
+    color: #454f63 !important;
+    text-decoration: none !important;
+}
+
+.libaray-list a:hover{
+    color: #5773ff !important;
+}
+
+.libaray-list:hover{
+    color: #5773ff;
+
+    
+}
+
+

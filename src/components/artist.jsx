@@ -3,13 +3,12 @@ import './artist.css'
 import {useDataLayerValue} from './DataLayer';
 
 
-
 const Artist = () => {
     const [{top_artist}]= useDataLayerValue();
 
 
     return ( 
-        <div className="album-main d-flex  mt-2">
+        <div className="album-main d-flex flex-column mt-2">
             <div className="content-main d-flex flex-wrap justify-content-around ">
             {top_artist?.items?.map((track,index)=>
                 <div key={index} className="artist-main-wrapper d-flex flex-column align-items-center">
@@ -22,6 +21,7 @@ const Artist = () => {
                 </div>   
             )}
             </div>
+              
 
        
         </div>

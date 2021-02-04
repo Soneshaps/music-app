@@ -23,7 +23,7 @@ const Player = () => {
         spotify.skipToNext()
     }
     return ( 
-        <div className="d-flex flex-column ">
+        <div className="d-flex flex-column player-main p-3">
                             <div>
                     Playing Now
                 </div>

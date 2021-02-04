@@ -30,16 +30,16 @@ const TopTrack = () => {
 
 
     return ( 
-        <div className="top-track d-flex flex-wrap pt-2 align-items-center">
-            {top_track?.items?.slice(0,6).map((track,index)=>
-            <div key={index} className="d-flex flex-wrap align-item-center pb-1 pr-3">
-                    <div className="track-count pr-3 d-flex align-items-center">
+        <div className="top-track d-flex flex-column pb-3">
+            {top_track?.items?.slice(0,9).map((track,index)=>
+            <div key={index} className="d-flex flex-row justify-content-around align-items-center pb-1 ">
+                    <div className="track-count d-flex align-items-center">
                 0{index+1}
             </div>
-            <div className="track-image pr-3">
+            <div className="track-image">
                 <img alt={track?.name} src={track?.album?.images[0]?.url}/>
             </div>
-            <div className="track-detail d-flex flex-column pr-2 d-flex align-items-center">
+            <div className="track-detail d-flex flex-column align-items-center">
                 <div className="track-name ">
                     {track?.name}
                 </div>
@@ -47,10 +47,10 @@ const TopTrack = () => {
                     {track?.artists[0]?.name}
                 </div>
             </div>
-            <div className="track-time pr-3 d-flex align-items-center">
+            <div className="track-time d-flex align-items-center">
                 {millisToMinutesAndSeconds(track?.duration_ms)}
             </div>
-            <div className="track-play pr-3 d-flex align-items-center">
+            <div className="track-play d-flex align-items-center">
                 {(current_playing_track?.item?.id===track?.id)?<FiBarChart2/>:<RiPlayMiniFill onClick={()=>trackPlay(track?.uri)}/>}
                    
             </div>

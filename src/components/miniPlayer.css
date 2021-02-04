@@ -1,0 +1,54 @@
+.miniplayer-wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+.miniplayer-main{
+    height: 65px;
+
+    background-color: #212529;
+    
+}
+
+.miniplayer-image img{
+    height: 50px;
+    width: 50px;
+}
+
+.miniplayer-detail{
+    width: 300px;
+    color: #fff;
+    height: min-content;
+}
+
+.miniplayer-name{
+    font-size: 15px;
+}
+
+
+.miniplayer-artist{
+    font-size: 12px;
+}
+
+.miniplayer-buttons{
+    flex: 1;
+    flex-basis: fill;
+}
+
+.miniplayer-button svg{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.miniplayer-button svg:hover{
+    color: #454f63;
+    transition: all 0.2s ease-in;
+}
+
+.miniplayer-button svg:active{
+    color: #1c1d21;
+    transition: all 0.1s ease-in;
+}

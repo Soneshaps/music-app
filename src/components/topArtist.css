@@ -1,18 +1,18 @@
 .top-artist-wrapper{
-    flex: 0 0 70px; /* Let it fill the entire space horizontally */
+    /* Let it fill the entire space horizontally */
 
      }
 
 .top-artist-image img{
-    height: 70px;
-    width: 70px;
-    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
 }
  .artist-name{
      color: #454f63;
      font-size: 11px;
-     height: 40px;
-     vertical-align: middle;
+     height: 30px;
+     overflow: hidden;
      cursor: pointer;
  }
 

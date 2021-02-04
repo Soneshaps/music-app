@@ -1,10 +1,11 @@
 import React from 'react';
 import './musicLibaray.css'
-import {AiFillFolder,AiFillHeart} from 'react-icons/ai'
+import {Link} from 'react-router-dom'
+import {AiFillFolder} from 'react-icons/ai'
 
 const MusicLibaray = () => {
-    const libarayItems = ["Favrourites","Playlist"] 
-    const libarayItemsIcon = [<AiFillHeart/>,<AiFillFolder/>]
+    const libarayItems = [<Link to="/playlist">Playlist</Link>] 
+    const libarayItemsIcon = [<AiFillFolder/>]
     return ( 
         <div className="music-libaray-area mt-5 pl-2">
                 <div className="libaray-title mt-4 mb-4">

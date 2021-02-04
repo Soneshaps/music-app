@@ -2,7 +2,7 @@ import React from 'react';
 import './titleNav.css';
 
 const TitleNav = () => {
-    let titleNav = ["MUSIC" , "PODCAST", "LIVE"]
+    let titleNav = ["PLAYER"]
     return ( 
         <div className="d-flex flex-row">
             {titleNav.map((nav,index)=>

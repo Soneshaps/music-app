@@ -21,11 +21,11 @@ const RecentPlayed = () => {
         
         {recent_tracks?.items?.slice(0,6).map((tracks,index)=>
             <div key={index} onClick={()=>playTrack(tracks?.track?.uri)} className="recent-tracks d-flex flex-column justify-content-center">
-                <img alt={tracks?.track?.name} src={tracks?.track?.album?.images[0].url}/>
+                <div className="d-flex justify-content-center"><img alt={tracks?.track?.name} src={tracks?.track?.album?.images[0].url}/></div>
                 <div className="recent-track-name d-flex text-center align-items-center justify-content-center">{tracks?.track?.name}</div>
             </div>    
         )}
-    </div>
+        </div>
      );
 }
  

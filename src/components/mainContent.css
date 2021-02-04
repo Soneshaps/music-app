@@ -1,26 +1,23 @@
 .top-main-content{
     background-color: #fff;
-    height: 200px;
     border-radius: 5px;
-
-
+    flex-basis: content;
 }
-.recent-played-title{
+
+.bottom-main-content{
+    flex-basis: content;
+}
+
+
+
+.main-content-title{
     color: #9a9aa6;
     font-weight: 600;
     letter-spacing: 0.9px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    
 }
 
-.main-content{
-    flex: 0 0 700px;
-}
-
-
-
-
-.main-top{
-}
 
 .main-top-artist{
     color: #9a9aa6;
@@ -29,19 +26,14 @@
     font-size: 0.9rem;
     background-color: #fff;
     border-radius: 5px;
-    
+   
+}
+
+.main-top-track{
+   
 }
 
 .main-top-genres{
-    color: #9a9aa6;
-    font-weight: 600;
-    letter-spacing: 0.9px;
-    font-size: 0.9rem;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-.main-top-charts{
     color: #9a9aa6;
     font-weight: 600;
     letter-spacing: 0.9px;
@@ -57,5 +49,23 @@
     font-size: 0.9rem;
     background-color: #32323d;
     border-radius: 5px;
+    flex-basis: 30%;
+}
+.main-content{
     flex: 1;
 }
+
+
+
+.main-top-charts{
+    color: #9a9aa6;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 100%;
+}
+

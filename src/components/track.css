@@ -1,12 +1,13 @@
 .album-main{
     background-color: #fff;
     border-radius: 5px;
+    width: 100%;
 }
 
 .content-main{
     height: 600px;
     overflow: auto;
-    
+    padding-bottom: 80px;
 }
 
 .track-main-wrapper{

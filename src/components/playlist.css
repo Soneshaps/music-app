@@ -1,0 +1,57 @@
+.playlist-main{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+.playlist-main-wrapper{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.playlist-main-image img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+
+.playlist-main-svg svg{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+.playlist-main-svg {
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.playlist-main-svg:hover {
+    background-color: rgba(33, 37, 41, 0.5);
+}
+
+.playlist-main-add-name{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+
+
+.playlist-main-name{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.playlist-main-name:hover{
+    color: #1DB954;
+}

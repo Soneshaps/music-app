@@ -4,19 +4,20 @@
     border-radius: 10px;
     cursor: pointer;
     color: #454f63;
-
     transition: 0.3s ease;
 }
 .recent-tracks:hover{
     text-decoration: underline;
 }
 .recent-tracks img{
-    height: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 10px;
 }
 
 .recent-track-name{
     height: 50px;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 600;
+    overflow: hidden;
 }
