@@ -9,8 +9,10 @@ import Artist from './artist'
 import Recent from './recent'
 import MiniPlayer from './miniPlayer'
 import Playlist from './playlist'
+import Popup from './popup'
 import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
 import {useDataLayerValue} from './DataLayer';
+import { useState } from 'react';
 
 
 
@@ -18,10 +20,18 @@ function App() {
   const windowWidth = window.innerWidth;
   const pathname = window.location.pathname;
   const [{current_playing_track}]= useDataLayerValue();
+  
+  const [showPopup,setShowPopup]=useState(true)
+  const close=()=>{
+    setShowPopup(false)
+  }
 
 
   return (
     <Router>
+      <div onClick={close}>
+        {(showPopup===true)?<Popup />:[]}
+      </div>
     <div className="main d-flex">
       {(windowWidth>775?
         <div className="music-nav-main pl-4 pr-5 d-flex flex-column">
